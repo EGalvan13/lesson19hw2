@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Images</title>
+    
+</head>
+<body>
+    <h1>Random Images</h1>
+    <script type="text/javascript">
+        var imageURLs = [
+             "image1.jpg"
+           , "image2.jpg"
+           , "image3.jpg"
+           , "image4.jpg"
+           , "image5.jpg"
+           , "image6.jpg"
+        ];
+        function getImageTag() {
+          var img = '<img src=\"';
+          var randomIndex = Math.floor(Math.random() * imageURLs.length);
+          img += imageURLs[randomIndex];
+          img += '\" alt=\"Some alt text\"/>';
+          return img;
+        }
+      </script>
+      </head>
+      <body>
+      <script type="text/javascript">
+        document.write(getImageTag());
+      </script>
+<br>
+<a href="../../../index.html">Go Back to Homepage - Esau Galvan</a>
+    
+</body>
+</html> 
